@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Aditya Hermez</title>
+    <style>
+        .hero{
+            background-image: url('images/Rectangle\ 1\ .png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            color: white;
+            text-align: center;
+            position: relative;
+            
+        }
+        .overlay-p{
+            max-width: 65ch;
+            margin: 30px auto 0;
+            padding-top: 50px;
+        }
+        .overlay-h1{
+            font-size: 4vw; /* Responsive font size */
+            max-width: 25ch; 
+            margin: 0 auto;
+            margin-top: 150px;
+        }
+       .overlay-btn{
+            background-color: rgb(109, 30, 30);
+            color: white;
+            border-radius: 5px;
+            border: 2px solid rgb(109, 30, 30); 
+            padding: 10px 20px; 
+            margin-top: 50px;
+            transition: background-color 0.3s, color 0.3s, border 0.3s;
+            
+       }
+       .overlay-btn:hover {
+            background-color: #7e1b1b; 
+            color: #f1f1f1; 
+        }
+        .navbar{
+            background-color: rgba(0, 0, 0, 0.345);    
+        }
+        .navbar-brand{
+            padding-left: 50px;
+        }
+        .navbar-nav .nav-link:hover{
+            color: white !important;
+        }
+        .nav-item {
+            padding: 10px;
+        }
+        .navbutton{
+            background-color: rgb(131, 32, 32);
+            color: white;
+            border-radius: 5px;
+            border: 2px solid rgb(131, 32, 32); 
+            padding: 10px;
+            margin-right: 70px;
+            transition: background-color 0.3s, color 0.3s, border 0.3s;
+        }
+        .navbutton:hover {
+            background-color: #962222; 
+            color: #ffffff; 
+           
+            } 
+@media (max-width: 480px) {
+    .overlay{
+        padding: 20px;
+        text-align: justify;
+    }
+    
+    .overlay-h1 {
+        font-size: 8vw;
+        max-width: 30ch; 
+    }
+
+    .overlay-p {
+        font-size: 5vw;
+        max-width: 45ch; 
+    }
+
+    .overlay-btn {
+        padding: 6px 12px; 
+        margin-top: 15px;
+    }
+    .navbutton{
+        margin-right: auto;
+    }
+}
+
+/* About us */
+
+.about_us {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    background-color: rgb(249, 239, 226);
+    padding: 50px; 
+    gap: 20px;
+}
+.frame_17{
+    padding-left: 50px;
+}
+.frame_17 h3{
+ width: 470px;
+ font-size: 4ch;
+}
+.frame_17 p{
+    width: 470px;
+    
+}
+.frame_17_img{
+    padding-top: 40px;
+}
+.frame_16{
+    padding: 50px;
+}
+.frame_15 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    align-items: center; 
+    justify-items: center; 
+    padding-top: 50px;
+    width: 550px; 
+}
+
+.frame_15_img {
+    width: 160px;
+    height: 220px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 160px; 
+    height: 220px; 
+    border-radius: 5px;
+    border: 1px solid black;
+    overflow: hidden; 
+}
+.container img {
+    width: 160px;
+    height: 120px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.image-text p {
+   padding: 20px;
+    font-size: .8em; 
+    color: black; 
+    text-align: center; 
+    overflow: hidden; 
+}
+/* About us */
+
+
+@media (max-width: 768px) {
+    .about_us {
+        grid-template-columns: 1fr; 
+        padding: 20px;
+    }
+  
+    .frame_17 h3, .frame_17 p {
+        width: 100%;
+        font-size: 1.5em;
+    }
+    .frame_17_img {
+        padding-top: 20px;
+    }
+    .frame_16 {
+        padding: 20px;
+    }
+    .frame_15 {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding-top: 20px;
+    }
+    .frame_15_img, .container {
+        width: 100%;
+        height: auto;
+    }
+    .container img {
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .about_us {
+        padding: 20px;
+    }
+    .frame_17 {
+        padding-left: 10px;
+    }
+    .frame_17 h3, .frame_17 p {
+        font-size: 1.2em;
+    }
+    .frame_17_img {
+        padding-top: 10px;
+       padding: 10px;
+        max-width: 40ch;
+    }
+    .frame_16 {
+        padding: 10px;
+        
+    }
+    .frame_16_img{
+        max-width: 40ch;
+    }
+    .frame_15 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        padding-top: 10px;
+        max-width: 41ch;
+    }
+    .frame_15_img{
+        max-height: 40ch;
+        max-width: 20ch;
+    }
+    .image-text p {
+        padding: 10px;
+        font-size: 0.8em;
+        max-width: 40ch;
+    }
+    .container img{
+        width: 20ch;
+        height: 15ch;
+    }
+    .container{
+        
+    max-width: 20ch;
+    height: 27ch;
+    overflow: hidden; 
+    }
+}
+
+/* Our Buisness */
+
+.our_buisness {
+    padding: 100px;
+   
+}
+.buisness_p{
+    width: 600px;
+}
+
+.frame_12 {
+    margin-bottom: 20px;
+}
+
+.card-img {
+    height: auto;
+    width: 100%;
+}
+
+.card_parent {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+    flex-wrap: wrap; 
+    gap: 20px; 
+}
+
+.card {
+    width: 100%; 
+    overflow: hidden;
+    margin-bottom: 20px; 
+    flex: 1 1 200px; /* Ensures cards take equal space and shrink properly */
+    border: none;
+}
+
+.card-body {
+    padding: 5px;
+}
+
+.card-body h6 {
+    margin: 0 0 10px; 
+    font-size: 1.5rem;
+    color: green;
+}
+
+.card-text {
+    
+    width: 100%;
+    white-space: normal; 
+    text-align: justify;
+}
+
+.card_link {
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: #972929;
+}
+
+.card_link:hover {
+    color: #e31313;
+    text-decoration: none;
+}
+
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%; 
+    }
+    .buisness_p{
+        width: 250px;
+    }
+    .frame_12 {
+    margin-bottom: 20px;
+   
+}
+}
+
+/* our properties */
+.our_properties {
+    padding: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: rgb(248, 238, 226);
+    gap: 20px; 
+}
+
+.frame_10 p {
+    width: 100%;
+    height: auto;
+}
+
+.prop_button {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+   
+}
+
+.cnt-btn {
+    border: 0.5px solid;
+    border-color: rgba(34, 34, 34, 0.295);
+    background-color: antiquewhite;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 5px 15px;
+    border-radius: 3px;
+}
+
+.cnt-btn:hover {
+    color: #972929;
+    background-color: #992c2c3b;
+}
+
+.prop_content {
+    padding-top: 40px;
+    width: 100%;
+}
+
+.prop_content_2 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.content_right {
+   
+    margin-top: 40%;
+    height: 55%;
+    display: flex;
+    justify-content: center; 
+    align-items: end;
+   
+}
+
+.pagination {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.pagination_btn {
+    padding: 5px;
+    width: 35px;
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+    color: #972929;
+}
+
+.pagination_btn:hover {
+    background-color: #972929;
+    color: white;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1200px) {
+    .our_properties {
+        padding: 50px;
+        grid-template-columns: 1fr; 
+    }
+
+    .frame_10 p {
+        width: 100%;
+    }
+
+    .prop_button {
+        justify-content: center; 
+    }
+
+    .prop_content,
+    .prop_content_2 {
+        width: 100%;
+    }
+
+    .content_right {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pagination {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .our_properties {
+        padding: 20px;
+    }
+
+    .frame_10 img {
+        width: 100%;
+        height: auto;
+    }
+    .prop_button{
+        display: block;
+    }
+    .cnt-btn {
+        font-size: 0.9rem; 
+        width: 100px;
+    }
+    .image_prop{
+        width: 100px !important;
+        height: auto;
+       
+    }
+
+    .prop_content,
+    .prop_content_2 {
+        width: 100%;
+    }
+
+    .content_right {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pagination {
+        justify-content: center;
+    }
+}
+
+/* News Letter */
+.news_letter{
+    padding: 100px;
+   display: flex;
+   flex-direction: row;
+   gap: 150px;
+}
+
+.input-container {
+    position: relative;
+    display: flex;
+    width: 400px; 
+}
+
+.input-container input {
+    width: 100%;
+    padding: 10px 80px 10px 10px; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; 
+}
+
+.input-container button {
+    border: none;
+    background-color:#972929; 
+    color: white;
+    padding: 10px 20px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.input-container button:hover {
+    background-color:  #bc2626; 
+}
+
+
+.news_content_2{
+    padding-top: 30px;
+}
+@media (max-width: 480px) {
+    .news_letter{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2px;
+        padding: 20px;
+    }
+    .input-container{
+        padding: 20px;
+    }
+}
+/* footer */
+.footer{
+    background-color: rgb(85, 2, 2);
+    color: rgb(207, 206, 206);
+    padding-top: 50px;
+}
+.Footer_div{
+   display: flex;
+   justify-content:space-around;
+   flex-wrap:wrap ;
+
+}
+.sec_1{
+    font-size: .8rem;
+}
+
+.sec_2{
+    font-size: .9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+.sec_3{
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: .9rem;
+}
+@media(max-width:480px) {
+    .footer{
+        padding: 5px;
+        
+    }
+    
+}
+
+ </style>
+</head>
+<body>
+    <!-- navbar section Hero -->
+   
+    <section class="hero">
+        <nav class="navbar navbar-expand-lg navbar-dark ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="images/Frame 1000006020.png" width="90" height="30" class="d-inline-block align-top" alt="">
+                  
+                </a>
+                <button class="navbar-toggler"type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about_us.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Business.html">Our Business</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="SUS.html">Sustainability</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="investor.html">Investor</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="About.html">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="careers.html">Careers</a>
+                        </li>
+                    </ul>
+                    <a href="contactus.html" class="navbutton-link">
+                        <button class="navbutton">Contact Us</button></a>
+                </div>
+            </div>
+        </nav>
+        <!-- overlay -->
+        <div class="overlay">
+            <h1 class="overlay-h1">Rorem ipsm dolor sit adipiscing elit.</h1>
+            <p class="overlay-p">Horem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+            <button class="overlay-btn">Explore now</button>
+        </div>
+    </section>
+   
+
+    <!-- section About us -->
+    <section class="about_us">
+        <div class="frame_17">
+            <img src="images/Frame 10.png" height="17" width="60" alt=""><br><br>
+            <h3>Lorem ipsum dolor sit amet, adipiscing elit.</h3><br>
+            <p>Dorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
+                turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
+                nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum
+                tellus elit sed risus. Maecenas eget condimentum velit, sit amet
+                feugiat lectus.</p>
+            <img class="frame_17_img" src="images/Rectangle 6.png" width="500" height="600" alt="">
+        </div>
+
+        <div class="frame_16">
+           
+                <img class="frame_16_img" src="images/Rectangle 5.png" height="330" width="550" alt="">
+             
+            <div class="frame_15">
+                <img class="frame_15_img" src="images/Rectangle 7.png" alt="">
+                <div class="container">
+                    <span class="image-text">
+                        <img src="images/Rectangle 8.png" alt="Image" >
+                        
+                        <p>Rorem ipsum dolor sit adipiscing elit.</p>
+                    </span>
+                </div>
+                <img class="frame_15_img" src="images/Rectangle 9.png" alt="">
+            
+                <img class="frame_15_img" src="images/Rectangle 12.png" alt="">
+                <div class="container">
+                    <span class="image-text">
+                        <img src="images/Rectangle 13.png" alt="Image">
+                        <p>Rorem ipsum  dolor sit  adipiscing </p>
+                    </span>
+                </div>
+                <img class="frame_15_img" src="images/Rectangle 14.png" alt="">
+            </div>
+            
+        </div>    
+    </section>
+
+    <!-- section Our Buisness -->
+    <section class="our_buisness">
+        <div class="frame_12">
+            <img src="images/about_us_img.png" height="18" width="70" alt="">
+            <h3>Lorem ipsum dolor</h3>
+            <p class="buisness_p">Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</p>
+        </div>
+        <hr>
+        <!-- cards -->
+        <div class="card_parent">
+            <div class="card">
+                <img class="card-img" src="images/card_1.png" alt="Card image cap">
+                <div class="card-body">
+                    <h6>Plantations</h6>
+                  <p class="card-text">Korem ipsum dolor sit amet, conned sectetur adipiscing elit. Nunc vulpuate libero et velit interdum, ac aliquet....</p>
+                  <a class="card_link" href="">Explore More <i class="fas fa-sharp fa-regular fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img" src="images/card_2.png" alt="Card image cap">
+                <div class="card-body">
+                    <h6>Agri Trading</h6>
+                  <p class="card-text">Korem ipsum dolor sit amet, conned sectetur adipiscing elit. Nunc vulpuate libero et velit interdum, ac aliquet....</p>
+                  <a class="card_link" href="">Explore More <i class="fas fa-sharp fa-regular fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img" src="images/card_3.png" alt="Card image cap">
+                <div class="card-body">
+                    <h6>Agro Industries</h6>
+                  <p class="card-text">Korem ipsum dolor sit amet, conned sectetur adipiscing elit. Nunc vulpuate libero et velit interdum, ac aliquet....</p>
+                  <a class="card_link" href="">Explore More <i class="fas fa-sharp fa-regular fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img" src="images/card_4.png" alt="Card image cap">
+                <div class="card-body">
+                    <h6>Bio-Fertilizers & Labs</h6>
+                  <p class="card-text">Korem ipsum dolor sit amet, conned sectetur adipiscing elit. Nunc vulpuate libero et velit interdum, ac aliquet....</p>
+                  <a class="card_link" href="">Explore More <i class="fas fa-sharp fa-regular fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Our propeerties -->
+    <section class="our_properties">
+        <div class="content-left">
+            <div class="frame_10">
+                <img class="image_prop" src="images/prop.png" height="18" width="70 alt=""><br><br>
+                <h2>Plantations</h2>
+                <p>Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</p>
+            </div>
+            <hr>
+            <div class="prop_button">
+                <button class="cnt-btn">Coffee</button>
+                <button class="cnt-btn">Pepper</button>
+                <button class="cnt-btn">Arracanut</button>
+                <button class="cnt-btn">Coffee</button>
+                <button class="cnt-btn">Coconut</button>
+                <button class="cnt-btn">Ginger</button>
+                <button class="cnt-btn">Mango</button>
+            </div>
+            <div class="prop_content" id="prop_content">
+                <h3>Coffee</h3>
+                <p>Vorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et
+                    velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora
+                    torquent per conubia nostra, per inceptos himenaeos.</p>
+            </div>
+            <div class="prop_content_2" id="prop_content_2">
+                    <div class="content__sub">
+                        <i class="fas fa-thin fa-building"></i>
+                        <h6>Estate</h6>
+                        <p>Kargoor-Kampa Coffee</p>
+                    </div>
+                    <div class="content__sub">
+                        <i class="fas fa-solid fa-warehouse"></i>
+                        <h6>Area</h6>
+                        <p>100 acres</p>
+                    </div> 
+                    <div class="content__sub">
+                        <i class="fas fa-light fa-location-dot"></i>
+                        <h6>Location</h6>
+                        <p>Chikmangaluru, Karnataka</p>
+                    </div> 
+                    <div class="content__sub">
+                        <i class="fas fa-solid fa-i-cursor"></i>
+                        <h6>Variety grown</h6>
+                        <p>Robesta & Arabica</p>
+                    </div>  
+               
+            </div>
+            
+        </div>
+        <div class="content_right">    
+            <img src="images/image.png" id="right-image" class="right-img" width="100%" height="350" alt="">
+        </div>
+        <div class="pagination">
+            <button class="pagination_btn"><i class="fas fa-sharp fa-solid fa-arrow-left"></i></button>
+            <button class="pagination_btn"><i class="fas fa-sharp fa-solid fa-arrow-right"></i></button>  
+        </div>
+    </section>
+     
+
+<!-- News letter -->
+    <section class="news_letter">
+        <div class="news_content">
+                <img src="images/news.png" height="18" width="70 alt="">
+                <h1>Get our latest news and updates</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, <br> ac aliquet odio mattis.</p>
+        </div>
+        <div class="news_content_2">
+            <div class="input-container">
+                <input type="email" id="email" placeholder="Enter your email">
+                <button class="news_btn">Subscribe</button>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <section class="footer">
+        <div class="Footer_div">
+            <div class="sec_1">
+                    <div>
+                    <img src="images/Frame 1000006020.png" width="70" height="25"  alt=""><br><br>
+                    <h6>Address:</h6>
+                    <p>Morem ipsm dolor sit consectuer adisplicing elit.</p>
+                    </div>
+                    <div>
+                        <h6>Contact:</h6>
+                        <p> <u>+91 9355828491 <br>voremipsm@gmail.com</u></p>
+
+                    </div>
+                <div>
+                <a style="color: #f1f1f1;" href="">
+                    <i class="fab fa-facebook-f"></i>
+                </a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a style="color: #f1f1f1;" href="" >
+                    <i class="fab fa-instagram"></i>
+                </a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a style="color: #f1f1f1;"href="" >
+                    <i class="fab fa-linkedin"></i>
+                </a>&nbsp;&nbsp;&nbsp;&nbsp;
+                </div>
+            </div>
+            <div class="sec_2">
+                <span>About Us</span>
+                <span>Our Buisness</span>
+                <span>Sustainability</span>
+                <span>Investor</span>
+                <span>News</span>
+                <span>Careers</span>
+            </div>
+        </div>
+        <hr style="border: 1px solid rgb(198, 195, 195); width: 80%;">
+        <div class="sec_3">
+            <div>
+                <span>© 2024 ADITYA HERMEZ AGRO VENTURES, All right reserved</span>
+            </div>
+            <div>
+                <span><u>Privacy Policy</u></span>&nbsp;&nbsp;&nbsp;
+                <span><u>Terms of Service</u></span>&nbsp;&nbsp;&nbsp;
+                <span><u>Cookie Settings</u></span>&nbsp;&nbsp;&nbsp;
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Bootstrap JS and dependencies (Popper.js and jQuery) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+                 
+
+</body>
+</html>

@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Aditya Hermez</title>
+    <style>
+          .hero{
+            background-image: url('images/about_us/About.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            color: white;
+            text-align: center;
+            position: relative;
+            
+        }
+        /* .overlay-p{
+            max-width: 65ch;
+            margin: 30px auto 0;
+            padding-top: 50px;
+        } */
+        .overlay-h1{
+            font-size: 3.5vw; /* Responsive font size */
+            text-align: left;
+            padding-left: 20vh;
+            margin-top: 60vh;
+        }
+       /* .overlay-btn{
+            background-color: rgb(109, 30, 30);
+            color: white;
+            border-radius: 5px;
+            border: 2px solid rgb(109, 30, 30); 
+            padding: 10px 20px; 
+            margin-top: 50px;
+            transition: background-color 0.3s, color 0.3s, border 0.3s;
+            
+       }
+       .overlay-btn:hover {
+            background-color: #7e1b1b; 
+            color: #f1f1f1; 
+        } */
+        .navbar{
+            background-color: rgba(0, 0, 0, 0.345);    
+        }
+        .navbar-brand{
+            padding-left: 50px;
+        }
+        .navbar-nav .nav-link:hover{
+            color: white !important;
+        }
+        .nav-item {
+            padding: 10px;
+        }
+        .navbutton{
+            background-color: rgb(131, 32, 32);
+            color: white;
+            border-radius: 5px;
+            border: 2px solid rgb(131, 32, 32); 
+            padding: 10px;
+            margin-right: 70px;
+            transition: background-color 0.3s, color 0.3s, border 0.3s;
+        }
+        .navbutton:hover {
+            background-color: #962222; 
+            color: #ffffff; 
+           
+            } 
+@media (max-width: 480px) { 
+    .overlay-h1 {
+        font-size: 15vw;
+        padding-left: 13vh; 
+        font-weight: bold;
+    }
+    .navbutton{
+        margin-right: auto;
+    }
+}
+/* section_2 */
+    .section_2{
+        padding: 50px 100px 0px 100px;
+        
+    }
+
+    .head{
+        font-size: .8rem;
+        font-weight: bold;
+        color: #7e1b1b;
+        margin-bottom: 10px; 
+        flex-wrap: wrap; 
+    }
+    .con_1{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .con_1 h1{
+        width: 500px;
+        font-weight: bold;
+        padding-top: 15px;
+    }
+    .con_1 p{
+        width: 650px;
+        text-align: justify;
+    }
+    .con_2{
+        margin-top: 60px;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    .card{
+        width: 400px;
+        padding: 10px;
+        text-align: center;
+        border: none;
+    }
+    .card img{
+        margin: 0 auto;
+    }
+    .card h3{
+        padding-bottom: 10px;
+        padding-top: 20px;
+        color: #7e1b1b;
+        font-weight: bold;
+    }
+    @media(max-width:768px){
+        .section_2{
+            padding: 20px;
+        }
+       .con_1{
+        
+        width: 370px;
+       }
+    }
+    /* section_3 */
+    .section_3{
+        padding: 100px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        background-color:rgb(105, 57, 44);
+        margin-top: 100px;
+    }
+    .form{
+        background-color:rgb(138, 84, 69);
+        padding: 10px 20px 20px 20px;
+        line-height: 4ch;
+        color: #ffffff;
+        flex-wrap: wrap;
+        
+    }
+    .form_inp {
+    width: 100%;
+    background-color:rgb(138, 84, 69);
+    color: #ffffff;
+    border: 1px solid #ffffff;
+   
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.form_inp:focus {
+    outline: none;
+    border-color: #45a049;
+}
+    .form h3{
+        width: 400px;
+    }
+    .form button[type="submit"] {
+   width: 100%;
+   background-color: white;
+   border: none;
+    }
+
+    .form button[type="submit"]:hover {
+        background-color: #45a049; /* Darker green */
+    }
+    .image{
+        background-color: #962222;
+    }
+    @media(max-width:768px){
+        .section_3{
+            padding: 20px;
+        }
+        .form{
+            width: 370px;
+        }
+        .form h3{
+            width: 350px;
+        }
+        .image img{
+       width: 370px;
+       height: auto;
+    }
+    }
+    
+/* News Letter */
+.news_letter{
+    background-color: rgb(247, 226, 199);
+    padding: 100px;
+   display: flex;
+   flex-direction: row;
+   gap: 150px;
+}
+
+.input-container {
+    position: relative;
+    display: flex;
+    width: 400px; 
+}
+
+.input-container input {
+    width: 100%;
+    padding: 10px 80px 10px 10px; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; 
+}
+
+.input-container button {
+    border: none;
+    background-color:#972929; 
+    color: white;
+    padding: 10px 20px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.input-container button:hover {
+    background-color:  #bc2626; 
+}
+
+
+.news_content_2{
+    padding-top: 30px;
+}
+@media (max-width: 768px) {
+    .news_letter{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2px;
+        padding: 20px;
+    }
+    .input-container{
+        padding: 20px;
+    }
+}
+
+    /* footer */
+.footer{
+    background-color: rgb(85, 2, 2);
+    color: rgb(207, 206, 206);
+    padding-top: 50px;
+}
+.Footer_div{
+   display: flex;
+   justify-content:space-around;
+   flex-wrap:wrap ;
+
+}
+.sec_1{
+    font-size: .8rem;
+}
+
+.sec_2{
+    font-size: .9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+.sec_3{
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: .9rem;
+}
+@media(max-width:480px) {
+    .footer{
+        padding: 5px;   
+    }  
+}
+
+    </style>
+</head>
+<body>
+     <!-- navbar section Hero -->
+     <section class="hero">
+        <nav class="navbar navbar-expand-lg navbar-dark ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="images/Frame 1000006020.png" width="90" height="30" class="d-inline-block align-top" alt="">
+                  
+                </a>
+                <button class="navbar-toggler"type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about_us.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Our Business</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sustainability</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="investor.html">Investor</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="careers.html">Careers</a>
+                        </li>
+                    </ul>
+                    <a href="contactus.html" class="navbutton-link">
+                        <button class="navbutton">Contact Us</button></a>
+                </div>
+            </div>
+        </nav>
+        <!-- overlay -->
+        <div class="overlay">
+            <h1 class="overlay-h1">Careers</h1>
+        </div>
+     </section>
+     <!-- section_2 -->
+     <section class="section_2">
+        <div class="head">
+            <span>Work with us</span>
+        </div>
+        <div class="con_1">
+            <h1>Why join us?</h1>
+            <p>We offer continuous learning and development opportunities, ensuring our employees advance their skills and careers. Our workplace promotes diversity and inclusion, fostering a supportive and collaborative environment for all team members. Join a dedicated and skilled team, committed to delivering exceptional results and maintaining high standards</p>
+        </div>
+        <div class="con_2">
+            <div class="card">
+                <img src="images/careers/icon.png" width="25" height="25" alt="">
+                <h3>Professional Growth</h3>
+                <p>Dorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</p>
+            </div>
+            <div class="card">
+                <img src="images/careers/icon_2.png" width="25" height="25" alt="">
+                <h3>Inclusive Culture</h3>
+                <p>Dorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</p>
+            </div>
+            <div class="card">
+                <img src="images/careers/icon_2.png" width="25" height="25" alt="">
+                <h3>Incredible Team</h3>
+                <p>Dorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</p>
+            </div>
+        </div>
+     </section>
+     <!-- section_3 -->
+     <section class="section_3">
+        <div class="form">
+            <h3>Fill the form for a future with specialised property solutions</h3>
+            <label for="">Name</label><br>
+            <input class="form_inp" type="text"><br>
+            <label for="">Email</label><br>
+            <input class="form_inp" type="email"><br>
+            <label for="">Phone</label><br>
+            <input class="form_inp" type="number"><br>
+            <label for="">Resume</label><br>
+            <input class="form_inp" type="file">    
+            <input type="checkbox">
+            <label for="">I accept the Terms</label><br>
+            <button type="submit">Submit</button>
+        </div>
+        <div class="image">
+            <img src="images/careers/Placeholder Image.png" width="600" height="600" alt="">
+        </div>
+     </section>
+     <!-- News letter -->
+    <section class="news_letter">
+        <div class="news_content">
+                <img src="images/news.png" height="18" width="70 alt="">
+                <h1>Get our latest news and updates</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, <br> ac aliquet odio mattis.</p>
+        </div>
+        <div class="news_content_2">
+            <div class="input-container">
+                <input type="email" id="email" placeholder="Enter your email">
+                <button class="news_btn">Subscribe</button>
+            </div>
+        </div>
+    </section>
+      <!-- Footer -->
+    <section class="footer">
+        <div class="Footer_div">
+            <div class="sec_1">
+                    <div>
+                    <img src="images/Frame 1000006020.png" width="70" height="25"  alt=""><br><br>
+                    <h6>Address:</h6>
+                    <p>Morem ipsm dolor sit consectuer adisplicing elit.</p>
+                    </div>
+                    <div>
+                        <h6>Contact:</h6>
+                        <p> <u>+91 9355828491 <br>voremipsm@gmail.com</u></p>
+                    </div>
+                <div>
+                <a style="color: #f1f1f1;" href="">
+                    <i class="fab fa-facebook-f"></i>
+                </a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a style="color: #f1f1f1;" href="" >
+                    <i class="fab fa-instagram"></i>
+                </a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a style="color: #f1f1f1;"href="" >
+                    <i class="fab fa-linkedin"></i>
+                </a>&nbsp;&nbsp;&nbsp;&nbsp;
+                </div>
+            </div>
+            <div class="sec_2">
+                <span>About Us</span>
+                <span>Our Buisness</span>
+                <span>Sustainability</span>
+                <span>Investor</span>
+                <span>News</span>
+                <span>Careers</span>
+            </div>
+        </div>
+        <hr style="border: 1px solid rgb(198, 195, 195); width: 80%;">
+        <div class="sec_3">
+            <div>
+                <span>© 2024 ADITYA HERMEZ AGRO VENTURES, All right reserved</span>
+            </div>
+            <div>
+                <span><u>Privacy Policy</u></span>&nbsp;&nbsp;&nbsp;
+                <span><u>Terms of Service</u></span>&nbsp;&nbsp;&nbsp;
+                <span><u>Cookie Settings</u></span>&nbsp;&nbsp;&nbsp;
+            </div>
+        </div>
+    </section>
+      <!-- Bootstrap JS and dependencies (Popper.js and jQuery) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

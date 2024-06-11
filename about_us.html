@@ -1,0 +1,506 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Aditya Hermez</title>
+    <style>
+        body{
+            background-color: #f1f1f1;
+        }
+        .hero{
+            background-image: url('images/about_us/About.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            color: white;
+            text-align: center;
+            position: relative;
+            
+        }
+        .navbar{
+            background-color: rgba(0, 0, 0, 0.345);    
+        }
+        .navbar-brand{
+            padding-left: 50px;
+        }
+        .navbar-nav .nav-link:hover{
+            color: white !important;
+        }
+        .nav-item {
+            padding: 10px;
+        }
+        .navbutton{
+            background-color: rgb(131, 32, 32);
+            color: white;
+            border-radius: 5px;
+            border: 2px solid rgb(131, 32, 32); 
+            padding: 10px;
+            margin-right: 70px;
+            transition: background-color 0.3s, color 0.3s, border 0.3s;
+        }
+        .navbutton:hover {
+            background-color: #962222; 
+            color: #ffffff; 
+           
+            } 
+
+            @media(max-width:480px){
+                .navbutton{
+        margin-right: auto;
+    }
+            }
+.overlay{
+margin-top:70vh;
+display: flex;
+justify-content: space-between;
+padding-left: 100px;
+padding-right: 100px;
+flex-wrap: wrap;
+
+
+}
+.overlay h1{
+    font-size: 2.5rem;
+    font-weight: bold;
+    
+}
+.overlay p{
+    width: 500px;
+    text-align: justify;
+}
+@media(max-width:768px){
+    .overlay{
+       
+        padding: 20px;
+}
+}
+
+/* News Letter */
+.news_letter{
+    background-color: rgb(247, 226, 199);
+    padding: 100px;
+   display: flex;
+   flex-direction: row;
+   gap: 150px;
+}
+
+.input-container {
+    position: relative;
+    display: flex;
+    width: 400px; 
+}
+
+.input-container input {
+    width: 100%;
+    padding: 10px 80px 10px 10px; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; 
+}
+
+.input-container button {
+    border: none;
+    background-color:#972929; 
+    color: white;
+    padding: 10px 20px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.input-container button:hover {
+    background-color:  #bc2626; 
+}
+
+
+.news_content_2{
+    padding-top: 30px;
+}
+@media (max-width: 768px) {
+    .news_letter{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2px;
+        padding: 20px;
+    }
+    .input-container{
+        padding: 20px;
+    }
+}
+
+    /* footer */
+.footer{
+    background-color: rgb(85, 2, 2);
+    color: rgb(207, 206, 206);
+    padding-top: 50px;
+}
+.Footer_div{
+   display: flex;
+   justify-content:space-around;
+   flex-wrap:wrap ;
+
+}
+.sec_1{
+    font-size: .8rem;
+}
+
+.sec_2{
+    font-size: .9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+.sec_3{
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: .9rem;
+}
+@media(max-width:480px) {
+    .footer{
+        padding: 5px;   
+    }  
+}
+/* section_2 */
+
+.section_2 img{
+    width: auto;
+    height: 71.5vh;
+    background-color: rgb(202, 122, 25);
+    flex-wrap: wrap; 
+}
+.content_2{
+    background-color: rgb(255, 255, 255);
+    width: 600px;
+    padding: 15px;
+    text-align: justify;
+    position: relative;
+    top: -130px;
+    left: 100px;
+    flex-wrap: wrap; 
+}
+.content_2 h3{
+    font-weight: bold;
+    color: #962222;
+    width: 400px;
+    
+}
+.content_2 p{  
+   font-size: .9rem;
+}
+@media(max-width:768px){
+    
+    .section_2 img{
+    width: 410px;
+
+    height: 300px;
+    overflow: hidden; 
+    }
+    .content_2{
+        max-width: 411px;
+       padding: 20px;
+        top: auto;
+        left: auto;
+    }
+    .content_2 h3{
+        max-width: 380px;
+        text-align: justify;
+    }
+}
+/* section_3 */
+
+.sec3con{
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 50px;
+    display: flex;
+   justify-content: space-between;
+    flex-wrap: wrap;
+}
+.sec3con h3{
+    color: #962222;
+    font-size: 2.3rem;
+    font-weight: bold;
+    width: 350px;
+    text-align:justify;
+}
+.sec3con p{
+    padding-top: 35px;
+    width: 500px;
+}
+.card-parent{
+   padding: 0px 100px 50px 100px;
+   
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;   
+}
+.card{
+   padding: 20px; 
+   text-align: justify;
+   width: 400px; 
+}
+.card h4{
+    color: #962222;
+}
+@media(max-width:768px){
+    .sec3con{
+        padding: 20px;
+    }
+    .sec3con h3{
+       width: 400px;
+    }
+    .sec3con p{
+    width: 400px;
+    text-align: justify;
+    }
+}
+
+/* section4 */
+.section_4{
+    background-color:rgb(253, 243, 231);
+}
+
+.card_body{
+    padding-top: 10px;
+    line-height: 1ch;
+}
+.card-parent-2{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 100px 50px 100px;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.card_2 .card_body h6{
+    color: #962222;
+    
+}
+.card-img {
+    height: auto;
+    width: 300px;
+}
+.sec4_head{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 150px 30px 150px;
+    flex-wrap: wrap;
+}
+.sec4_head h1{
+font-weight: bold;
+color: #962222;
+}
+.sec4_head p{
+    width: 500px;
+}
+@media(max-width:768px){
+    .card-parent-2{
+        padding-left: 50px;
+    }
+    .sec4_head{
+        padding: 20px;
+        text-align: justify;
+    }
+    .sec4_head h1{
+        padding-left: 100px;
+}
+}
+/* fdgdfg */
+
+
+    </style>
+</head>
+<body>
+     <!-- navbar section Hero -->
+     <section class="hero"> 
+        <nav class="navbar navbar-expand-lg navbar-dark ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="images/Frame 1000006020.png" width="90" height="30" class="d-inline-block align-top" alt="">
+                  
+                </a>
+                <button class="navbar-toggler"type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about_us.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Our Business</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sustainability</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="investor.html">Investor</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="careers.html">Careers</a>
+                        </li>
+                    </ul>
+                    <a href="contactus.html" class="navbutton-link">
+                        <button class="navbutton">Contact Us</button></a>
+                    
+                </div>
+            </div>
+        </nav>
+        <!-- overlay -->
+        <div class="overlay">
+            <h1 class="overlay-h1">About Us</h1>
+            <p class="overlay-p">Borem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent.</p>
+        </div>
+     </section>
+     <!-- section_2 -->
+     <section class="section_2">
+            <img src="images/about_us/img_2.png" alt="">
+            <div class="content_2">
+                <h3>Sorem ipsum dolor sit amet, consectetur adipiscing elit.</h3><br>
+                <p>ADIYA HERMEZ AGRO VENTURES , founded in 2019 and headquartered in UAE, is a growing At the core of adiya’s strategy is an integrated agribusiness model that encompasses the entire value chain of the agricultural commodity business, from origination, to processing, branding, merchandising and distribution of a wide range of edible food and industrial products. The Group's business activities include coffee oil palm cultivation, oilseed crushing, edible oils refining, flour and rice sugarcane pepper coconut, araccanut, rubber and refining, manufacturing of bio-fertilisers</p>
+            </div>
+     </section>
+     <!-- section_3 -->
+    <section class="section_3">
+        <div class="sec3con">
+            <h3>Lorem ipsum dolor sit amet,elit. Nunc vulputate libero et .</h3>
+            <p>Morem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis.</p>
+        </div>
+        <div class="card-parent">
+            <div class="card">
+                <img src="images/about_us/Frame.png" height="20" width="20" alt=""><br>
+                <h4>Feature 1</h4>
+                <p>Dorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis</p>
+            </div>
+            <div class="card">
+                <img src="images/about_us/Frame.png" height="20" width="20" alt=""><br>
+                <h4>Feature 2</h4>
+                <p>Dorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis</p>
+            </div>
+            <div class="card">
+                <img src="images/about_us/Frame.png" height="20" width="20" alt=""><br>
+                <h4>Feature 3</h4>
+                <p>Dorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis</p>
+            </div>
+
+        </div>
+    </section>
+    <!-- section_4 -->
+    <section class="section_4">
+        <div class="sec4_head">
+            <h1>Our Team</h1>
+            <p>Morem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</p>
+        </div>
+            <div class="card-parent-2">
+                <div class="card_2">
+                    <img class="card-img" src="images/about_us/card1.png"  alt="">
+                    <div class="card_body">
+                        <h6>Name</h6>
+                        <p>Designation</p>
+                    </div>
+                </div>
+                <div class="card_2">
+                    <img class="card-img" src="images/about_us/card2.png"  alt="">
+                    <div class="card_body">
+                        <h6>Name</h6>
+                        <p>Designation</p>
+                    </div>
+                </div>
+                <div class="card_2">
+                    <img class="card-img" src="images/about_us/card3.png"  alt="">
+                    <div class="card_body">
+                        <h6>Name</h6>
+                        <p>Designation</p>
+                    </div>
+                </div>
+                
+                <div class="card_2">
+                    <img class="card-img" src="images/about_us/card4.png" alt="">
+                    <div class="card_body">
+                        <h6>Name</h6>
+                        <p>Designation</p>
+                    </div>
+                </div>
+        </div>
+
+    </section>
+    <!-- News letter -->
+    <section class="news_letter">
+        <div class="news_content">
+                <img src="images/news.png" height="18" width="70 alt="">
+                <h1>Get our latest news and updates</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, <br> ac aliquet odio mattis.</p>
+        </div>
+        <div class="news_content_2">
+            <div class="input-container">
+                <input type="email" id="email" placeholder="Enter your email">
+                <button class="news_btn">Subscribe</button>
+            </div>
+        </div>
+    </section>
+      <!-- Footer -->
+    <section class="footer">
+        <div class="Footer_div">
+            <div class="sec_1">
+                    <div>
+                    <img src="images/Frame 1000006020.png" width="70" height="25"  alt=""><br><br>
+                    <h6>Address:</h6>
+                    <p>Morem ipsm dolor sit consectuer adisplicing elit.</p>
+                    </div>
+                    <div>
+                        <h6>Contact:</h6>
+                        <p> <u>+91 9355828491 <br>voremipsm@gmail.com</u></p>
+                    </div>
+                <div>
+                <a style="color: #f1f1f1;" href="">
+                    <i class="fab fa-facebook-f"></i>
+                </a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a style="color: #f1f1f1;" href="" >
+                    <i class="fab fa-instagram"></i>
+                </a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a style="color: #f1f1f1;"href="" >
+                    <i class="fab fa-linkedin"></i>
+                </a>&nbsp;&nbsp;&nbsp;&nbsp;
+                </div>
+            </div>
+            <div class="sec_2">
+                <span>About Us</span>
+                <span>Our Buisness</span>
+                <span>Sustainability</span>
+                <span>Investor</span>
+                <span>News</span>
+                <span>Careers</span>
+            </div>
+        </div>
+        <hr style="border: 1px solid rgb(198, 195, 195); width: 80%;">
+        <div class="sec_3">
+            <div>
+                <span>© 2024 ADITYA HERMEZ AGRO VENTURES, All right reserved</span>
+            </div>
+            <div>
+                <span><u>Privacy Policy</u></span>&nbsp;&nbsp;&nbsp;
+                <span><u>Terms of Service</u></span>&nbsp;&nbsp;&nbsp;
+                <span><u>Cookie Settings</u></span>&nbsp;&nbsp;&nbsp;
+            </div>
+        </div>
+    </section>
+      <!-- Bootstrap JS and dependencies (Popper.js and jQuery) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

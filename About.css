@@ -1,0 +1,480 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* ------------------------------------------------Navigation-Css------------------------------------------------------------------*/
+
+
+header {
+    position: fixed;
+    top: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(57, 57, 57, 0.512); 
+    backdrop-filter: blur(20px);
+    border-radius: 8px;
+    width: calc(100% - 56px);
+    z-index: 10;
+    height: 10vh;
+}
+
+header li, a, button {
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(240, 240, 240);
+    text-decoration: none;
+}
+
+.logo {
+    height: 48px;
+    width: auto;
+    cursor: pointer;
+}
+
+.logo:hover {
+    background: #000;
+}
+
+.nav_links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #242424;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(241, 241, 241);
+    justify-content: center;
+}
+
+#ct {
+    background-color: rgb(113, 43, 0);
+    margin: 4px;
+}
+
+#ct:hover {
+    background-color: rgb(151, 74, 25);
+    color: #ffffff;
+}
+
+#sn:hover {
+    background-color: rgb(151, 74, 25);
+    color: #ffffff;
+}
+
+header a:hover {
+    color: rgb(204, 204, 204); 
+}
+
+.link-logo {
+    display: inline;
+}
+
+
+
+/*--------------------------------------------Navigation----------------------------------------------------*/
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Poppins, sans-serif;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    padding-top: 10vh; /* Space for the fixed header */
+}
+
+.Section {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row wrap;
+    padding: 12px;
+}
+
+h3{
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+
+.details-info{
+    display: grid;
+    grid-template-columns: 20px 1fr;
+    grid-gap: 8px;
+    border-radius: 4px;
+}
+
+.details-info i{
+    width: 100%;
+    height: 100%;
+}
+
+.details-info h5{
+    color: rgb(197, 87, 19);
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*=======================About-section==================================*/
+.Section-3 {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.mission-wrapper{
+    display: grid;
+    grid-template-rows: 0.4fr 2fr;
+    width: 100%;
+    height: auto;
+    gap: 20px;
+}
+/*mission top part codes starts here..........*/
+
+.mission-top{
+    width: 100%;
+    height: 400px;
+    background: url('images/Rectangle\ 1ornews.png') no-repeat;
+    background-size: cover;
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    position: relative;
+    overflow: hidden;
+}
+.mission-top h3{
+    margin-top: 4px;
+    margin-bottom: 12px;
+    max-width: 300px;
+    line-height: 120%;
+    color: rgb(255, 255, 255);
+    z-index: 1;
+}
+
+.circle-big{
+    width: 400px;
+    height: 400px;
+    background-color: #ffffff43;
+    backdrop-filter: blur(20px);
+    border-radius: 50%;
+    position: absolute;
+    margin-left: -28px;
+    margin-bottom: -120px;
+}
+
+.circle-small{
+    width: 200px;
+    height: 200px;
+    background-color: #ffffff43;
+    backdrop-filter: blur(20px);
+    border-radius: 50%;
+    margin-left: 80px;
+    margin-bottom: 40px;
+}
+
+.mission-top p{
+    max-width: 650px;
+}
+
+/*mission bottom part codes starts here..........*/
+
+.mission-bottom{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    position: relative;
+    padding-top: 40px;
+}
+.mission-bottom h4{
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.mission-bottom p{
+    margin-top: 12px;
+    margin-bottom: 32px;
+}
+
+#crdBTM{
+    border-radius: 8px;
+    display: grid;
+    grid-template-rows: 1.5fr 2fr;
+}
+
+#crd-top{
+    width: 100%;
+    height: 100%;
+}
+
+.card-img{
+    width: 100%;
+    height: 100%;
+    background-color: #242424;
+    border-radius: 12px 12px 0 0;
+}
+
+.time-infos{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 18px;
+    border-bottom: 2px solid rgba(197, 87, 19, 0.304);
+}
+
+.details-info-2{
+    display: grid;
+    grid-template-columns: 20px 1fr;
+    grid-gap: 8px;
+    border-radius: 4px;
+    padding-bottom: 12px;
+}
+
+
+#crd-bottom{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    position: relative;
+    border-radius: 0 0 12px 12px;
+    border: 2px solid rgba(0, 0, 0, 0.189);
+    border-top: 0;
+}
+
+#btn-explore{
+    width: 100%;
+    height: fit-content;
+    background-color: transparent;
+    color: #000;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    position: relative;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+#btn-explore i{
+    width: auto;
+    height: 100%;
+}
+
+#icon-exp{
+    text-align: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+}
+
+
+
+
+/*==================================Mission btn=============================================*/
+
+.news-btn{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*================================================================Contact==============================================================*/
+.Section-contact{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    background-color: bisque
+    ; 
+}
+
+.contact-wrapper{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact-left{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+
+.contact-left p{
+    margin-top: 12px;
+}
+
+.contact-right{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+fieldset{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    border: 2px solid rgba(170, 102, 0, 0.745);
+    border-radius: 12px;
+}
+
+.contact-right input{
+    width: 400px;
+    height: 40px;
+    border: none;
+    background-color: rgb(253, 253, 253);
+    padding: 8px;
+    border-radius: 4px 0 0 4px;
+}
+
+
+
+/*================================================================footer==============================================================*/
+
+.footer{
+    position: relative;
+    width: 100%;
+    background-color: rgb(73, 28, 0);
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: rgb(255, 255, 255);
+
+}
+footer .footer-conent h4{
+    margin-bottom: 80px;
+}
+.footer-conent p{
+    width:320px;
+    margin: auto;
+    padding: 10px;
+    color: #ffffff;
+
+}
+
+.footer li{
+    width: auto;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-conent li a{
+    display:grid;
+    align-content: center;
+    justify-content: center;
+}
+
+.footer .list-2{
+    margin-top: 20px; 
+    list-style-type: none;
+    text-decoration: none;
+    position: relative;
+    padding: 4px;
+}
+
+.footer .info{
+    margin-top: 20px; 
+    list-style-type: none;
+    text-decoration: none;
+    position: relative;
+    padding: 4px;
+}
+
+
+#ico{
+   font-size: 2em;
+   background-color: rgba(59, 59, 59, 0.377);
+   color: rgb(255, 255, 255);
+   padding: 4px;
+   border-radius: 5px;
+}
+
+#ico:hover{
+    color:rgb(196, 196, 196);
+}
+
+.icons{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 50px);
+    grid-gap: 8px;
+    text-decoration: none;
+}
+
+.f1{
+    display: inline-block;
+}
+
+.list-2 a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.list-2 a:hover{
+
+    color: rgb(196, 196, 196);
+}
+
+.info li{
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    padding: 0  8px 16px;
+}
+
+.logo{
+    width: 80px;
+    height: auto;
+}
+.bottom-bar{
+    position: relative;
+    width: 100%;
+    background-color: rgb(73, 33, 0);
+    padding: 40px;
+    border-top: 2px solid gray;
+    color: #ffffff;
+}
